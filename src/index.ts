@@ -1,3 +1,4 @@
+export * as Array from "./Array";
 export * from "./etc";
-export * from "./types";
 export * as Object from "./Object";
+export * from "./types";
