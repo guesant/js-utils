@@ -77,6 +77,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#ensurearray" class="tsd-kind-icon">ensure<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#functionqueue" class="tsd-kind-icon">function<wbr>Queue</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#strictequal" class="tsd-kind-icon">strict<wbr>Equal</a></li>
 								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#strictequalhandler" class="tsd-kind-icon">strict<wbr>Equal<wbr>Handler</a></li>
@@ -93,7 +94,7 @@
 					<div class="tsd-signature tsd-kind-icon">IFunction<wbr>Queue<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/types/IFunctionQueueCallback.ts#L1">types/IFunctionQueueCallback.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/types/IFunctionQueueCallback.ts#L1">types/IFunctionQueueCallback.ts:1</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -118,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">IStrict<wbr>Equal<wbr>Handler&lt;T, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">R</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/types/IStrictEqualHandler.ts#L1">types/IStrictEqualHandler.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/types/IStrictEqualHandler.ts#L1">types/IStrictEqualHandler.ts:1</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -156,6 +157,46 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="ensurearray" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ensure<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/ensureArray.ts#L12">etc/ensureArray.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Ensure that the given value is an array, otherwise array them.</p>
+								</div>
+								<pre><code class="language-typescript"><span style="color: #795E26">expect</span><span style="color: #000000">(</span><span style="color: #795E26">ensureArray</span><span style="color: #000000">(</span><span style="color: #098658">12</span><span style="color: #000000">)).</span><span style="color: #795E26">toEqual</span><span style="color: #000000">([</span><span style="color: #098658">12</span><span style="color: #000000">]);</span>
+<span style="color: #795E26">expect</span><span style="color: #000000">(</span><span style="color: #795E26">ensureArray</span><span style="color: #000000">([</span><span style="color: #098658">12</span><span style="color: #000000">])).</span><span style="color: #795E26">toEqual</span><span style="color: #000000">([</span><span style="color: #098658">12</span><span style="color: #000000">]);</span>
+</code></pre>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>item: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>value to be cast into array</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
 					<a name="functionqueue" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> function<wbr>Queue</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
@@ -165,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/functionQueue.ts#L17">etc/functionQueue.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/functionQueue.ts#L17">etc/functionQueue.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,7 +239,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/functionQueue.ts#L26">etc/functionQueue.ts:26</a></li>
+													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/functionQueue.ts#L26">etc/functionQueue.ts:26</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -228,7 +269,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/functionQueue.ts#L42">etc/functionQueue.ts:42</a></li>
+													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/functionQueue.ts#L42">etc/functionQueue.ts:42</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -249,7 +290,7 @@
 										<li class="tsd-description">
 											<aside class="tsd-sources">
 												<ul>
-													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/functionQueue.ts#L33">etc/functionQueue.ts:33</a></li>
+													<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/functionQueue.ts#L33">etc/functionQueue.ts:33</a></li>
 												</ul>
 											</aside>
 											<div class="tsd-comment tsd-typography">
@@ -275,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/strictEqual.ts#L15">etc/strictEqual.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/strictEqual.ts#L15">etc/strictEqual.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/6ced413/src/etc/strictEqualHandler.ts#L25">etc/strictEqualHandler.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/guesant/js-utils/blob/4c1d2d0/src/etc/strictEqualHandler.ts#L25">etc/strictEqualHandler.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -396,6 +437,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#istrictequalhandler" class="tsd-kind-icon">IStrict<wbr>Equal<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#ensurearray" class="tsd-kind-icon">ensure<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
 						<a href="modules.html#functionqueue" class="tsd-kind-icon">function<wbr>Queue</a>
