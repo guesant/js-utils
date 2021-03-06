@@ -30,6 +30,7 @@
     "typescript": "^4.2.2"
   },
   "dependencies": {
-    "deep-equal": "^2.0.5"
+    "deep-equal": "^2.0.5",
+    "notation": "^2.0.0"
   }
 }
